@@ -4,13 +4,13 @@ import "../Nav/nav.css"
 const Nav = () => {
   return (
     <>
-    <nav>
+    <nav className='navbar '>
         <ul>
-            <li className='logo'><Link to="/">DineDash<i className="fa-solid fa-utensils"></i></Link></li>
+            <li ><Link to="/"><img className='logo' src="/Logo.png" alt="Nav-Logo" /></Link></li>
             <li><Link to="/"> Home</Link></li>
             <li><Link to="/about"> About</Link></li>
-            <li><Link to="/login"> Login</Link></li>
-            <li><Link to="/signup">Sign Up</Link></li>
+            <li><Link to="/login">Sign In</Link></li>
+            <li><Link to="/order">Order Now</Link></li>
         </ul>
     </nav>
     

@@ -1,3 +1,51 @@
-*{
-    font-family: sans-serif;
+
+:root {
+  /* 🔥 Brand Colors */
+  --primary-color: #FF4B2B;     /* Main red-orange (buttons, logo, highlights) */
+  --secondary-color: #FFC837;   /* Warm yellow (accents, hover, icons) */
+  --dark-color: #2E2E2E;        /* Text / headers / navbar background */
+  --light-color: #FFFFFF;       /* Backgrounds / sections */
+
+  /* 🌈 Optional Shades */
+  --primary-hover: #e13f20;     /* Slightly darker shade for hover effects */
+  --gray-light: #f7f7f7;        /* For section backgrounds */
+  --text-color: #333333;        /* Default text color */
+}
+
+/* Example usage */
+body {
+  background-color: var(--light-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+button:hover {
+  background-color: var(--primary-hover);
+  color: White;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+p{
+    color: var(--text-color);
+}
+h4{
+    color: var(--primary-color);
 }
